@@ -27,14 +27,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.71891835"
-     inkscape:cx="396.42889"
+     inkscape:cx="397.12437"
      inkscape:cy="449.28607"
      inkscape:window-width="958"
      inkscape:window-height="1000"
      inkscape:window-x="953"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#00000000" />
   <defs
      id="defs1">
     <rect
@@ -70,7 +71,10 @@
        id="circle7"
        cx="92.927505"
        cy="172.42194"
-       r="21.529739" />
+       r="21.529739"
+       inkscape:export-filename="logo_white.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="star"
        style="fill:#ffffff;fill-opacity:1;stroke-width:2.64583"
