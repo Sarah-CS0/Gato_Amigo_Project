@@ -1,0 +1,83 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+}
+
+/* HEADER */
+.top-bar {
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    margin: 20px 0;
+}
+
+.main-logo {
+    width: 150px; /* Adjust size based on your PNG */
+    height: auto;
+}
+
+/* HERO BANNER */
+.hero-banner {
+    background-color: #008080; /* Teal Color */
+    color: black;
+    padding: 40px 20px;
+    width: 80%;
+    margin: 0 auto 40px auto; /* Centers the box */
+}
+
+.hero-banner h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* CAT GRID */
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 40px;
+    width: 60%;
+    margin: 0 auto 60px auto;
+}
+
+.cat-card {
+    background-color: #008080; /* Teal background for the cards */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.contact-box {
+    background-color: #FFC0CB; /* Pink Color */
+    padding: 40px;
+    width: 60%;
+    font-weight: bold;
+}
+.cat-photo {
+    width: 100%;       /* Fill the card width */
+    height: 100%;      /* Fill the card height */
+    object-fit: cover; /* Crop the image so it doesn't stretch/squish */
+    border: 4px solid #008080; /* Optional: Adds a teal border frame */
+}
