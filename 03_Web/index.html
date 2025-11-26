@@ -4,43 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gato Amigo - Cat Care</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-orange: #E87E04;
+            --brand-dark: #2C3E50;
+            --brand-light: #FDF2E9; /* Very soft orange-white */
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            background-color: var(--brand-light);
+            color: var(--brand-dark);
+            text-align: center;
+        }
+
+        /* HEADER styling */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            padding-bottom: 20px;
+        }
+
+        .top-bar {
+            background-color: var(--brand-dark);
+            color: var(--white);
+            text-align: left;
+            padding: 10px 40px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo-container {
+            margin: 30px 0;
+        }
+
+        .main-logo {
+            width: 120px; /* Reduces the logo size */
+            transition: transform 0.3s ease;
+        }
+
+        .main-logo:hover {
+            transform: scale(1.1); /* Cute pop effect on hover */
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, var(--brand-orange), #D35400);
+            color: var(--white);
+            padding: 60px 20px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-banner h1 {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+            gap: 30px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto 60px auto;
+        }
+
+        .cat-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden; /* Clips the image if it sticks out */
+            box-shadow: var(--shadow);
+            height: 300px; /* Fixed height for uniformity */
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-5px); /* Floats up on hover */
+        }
+
+        .cat-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* CROPS image to fill box perfectly */
+        }
+
+        /* FOOTER styling */
+        footer {
+            background-color: var(--brand-dark);
+            color: var(--white);
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .contact-box p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-box strong {
+            color: var(--brand-orange);
+        }
+    </style>
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="top-bar">
-            <span>GatoAmigo.com</span>
+            <span>GATOAMIGO.LOCAL</span>
         </div>
         <div class="logo-container">
+            <!-- Ensure this path matches your file exactly -->
             <img src="img/logo_vfinal.png" alt="Gato Amigo Logo" class="main-logo">
-            </div>
+        </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="hero-banner">
-        <h1>Welcome dear cat owners, we're here to take care of your precious little kittens.</h1>
+        <h1>Welcome dear cat owners,<br>we're here to take care of your precious little kittens.</h1>
     </section>
 
+    <!-- MAIN CONTENT (Cat Grid) -->
     <main class="cat-grid">
+        <!-- Card 1 -->
         <div class="cat-card">
             <img src="img/cat1.jpg" alt="Fluffy Kitten" class="cat-photo">
         </div>
+        <!-- Card 2 -->
         <div class="cat-card">
             <img src="img/cat2.jpg" alt="Orange Tabby" class="cat-photo">
         </div>
+        <!-- Card 3 -->
         <div class="cat-card">
             <img src="img/cat3.jpg" alt="Green Eyes Cat" class="cat-photo">
         </div>
+        <!-- Card 4 -->
         <div class="cat-card">
             <img src="img/cat4.jpg" alt="Kitten Squad" class="cat-photo">
         </div>
+        <!-- Card 5-->
+        <div class="cat-card">
+            <img src="img/cat5.jpg" alt="Kitten Squad" class="cat-photo">
+        </div>
+        <!-- Card 6-->
+        <div class="cat-card">
+            <img src="img/cat6.webp"alt="Kitten Squad" class="cat-photo">
+        </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="contact-box">
-            <p><strong>Address and contact.</strong></p>
-            <p>46017, Patraix, Valencia</p>
+            <p><strong>Visit Us:</strong></p>
+            <p>46017 Patraix, Valencia
             <p>Tel: +34 600 000 000</p>
         </div>
     </footer>
